@@ -1,7 +1,6 @@
 import {
   ArrowDownToLine,
   Check,
-  Download,
   MessageCircle,
 } from "lucide-react";
 import Image from "next/image";
@@ -64,32 +63,9 @@ function Header() {
     <header className="sticky top-0 z-50 bg-[#9fb0ff]/95 shadow-sm backdrop-blur">
       <nav
         aria-label="Navegação principal"
-        className="section-shell flex min-h-16 items-center justify-between gap-4 py-3"
+        className="section-shell flex min-h-16 items-center py-3"
       >
         <Logo />
-        <div className="flex items-center gap-2 sm:gap-3">
-          <ButtonLink
-            aria-label="Baixar documento de serviços da Gogoup"
-            className="hidden px-4 text-xs sm:inline-flex"
-            download
-            href={documentUrl}
-            variant="blue"
-          >
-            <Download aria-hidden className="size-4" />
-            Informações e valores
-          </ButtonLink>
-          <ButtonLink
-            aria-label="Falar com a Gogoup pelo WhatsApp"
-            className="px-4 text-xs"
-            href={whatsappUrl}
-            rel="noopener noreferrer"
-            target="_blank"
-            variant="yellow"
-          >
-            <MessageCircle aria-hidden className="size-4" />
-            Contato
-          </ButtonLink>
-        </div>
       </nav>
     </header>
   );
@@ -101,9 +77,6 @@ function HeroSection() {
       <div className="section-shell grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <Reveal>
           <div className="max-w-xl">
-            <p className="mb-3 text-sm font-black uppercase tracking-[0.22em] text-primary">
-              Assessoria
-            </p>
             <h1 className="text-balance text-4xl font-black leading-[0.98] tracking-tight text-primary-dark sm:text-5xl lg:text-6xl">
               <span className="text-primary">Assessoria</span> estratégica para o seu negócio{" "}
               <span className="text-yellow">crescer.</span>
@@ -113,7 +86,15 @@ function HeroSection() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <ButtonLink href={whatsappUrl} rel="noopener noreferrer" target="_blank">
-                <MessageCircle aria-hidden className="size-5" />
+                <Image
+                  alt=""
+                  aria-hidden
+                  className="size-6 shrink-0"
+                  height="42"
+                  src={siteImages.whatsappIcon}
+                  unoptimized
+                  width="42"
+                />
                 Contato
               </ButtonLink>
               <ButtonLink download href={documentUrl} variant="blue">
@@ -178,7 +159,7 @@ function AssessmentSection() {
             </article>
           ))}
         </Carousel>
-        <p className="mt-3 rounded-full border border-primary/40 bg-white/25 px-5 py-3 text-center text-xs font-extrabold text-primary-dark">
+        <p className="mt-3 rounded-full border border-primary/40 bg-white/25 px-5 py-5 text-center text-base font-extrabold leading-relaxed text-primary-dark sm:text-lg">
           Se você respondeu não para uma ou mais perguntas, a Gogoup pode ajudar o seu negócio a
           crescer com segurança e tornando-se referência no seu segmento.
         </p>
@@ -189,14 +170,14 @@ function AssessmentSection() {
 
 function OfferSection() {
   return (
-    <section className="bg-white pt-16">
+    <section className="bg-[#e7ecf6] pt-16">
       <div className="section-shell">
         <Reveal>
           <h2 className="mb-9 text-lg font-black uppercase tracking-wide text-primary">
             O que oferecemos:
           </h2>
         </Reveal>
-        <div className="relative border-t-4 border-[#9c85d6] bg-panel pb-12 pt-16">
+        <div className="relative border-t-4 border-[#9c85d6] pb-12 pt-16">
           <span className="absolute -top-8 left-6 grid size-16 place-items-center rounded-2xl bg-[#8c78cf] text-lg font-black text-white">
             01
           </span>
@@ -221,7 +202,7 @@ function OfferSection() {
 
 function OnlinePresenceSection() {
   return (
-    <section aria-labelledby="presenca-online" className="bg-panel pb-16 pt-4">
+    <section aria-labelledby="presenca-online" className="bg-[#e7ecf6] pb-16 pt-4">
       <div className="section-shell">
         <h2 className="sr-only" id="presenca-online">
           PRESENÇA ONLINE
@@ -238,7 +219,11 @@ function OnlinePresenceSection() {
               <div className={`mb-4 h-1.5 rounded-full bg-gradient-to-r ${card.accent}`} />
               <Image
                 alt={`Ilustração do serviço ${card.title}`}
-                className="mb-5 h-52 w-full rounded-lg object-contain sm:h-56"
+                className={`mb-5 w-full rounded-lg object-contain ${
+                  card.title === "Google Business Profile"
+                    ? "h-64 scale-110 sm:h-72"
+                    : "h-52 sm:h-56"
+                }`}
                 height="601"
                 src={card.image}
                 unoptimized
