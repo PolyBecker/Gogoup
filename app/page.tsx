@@ -124,7 +124,7 @@ function HeroSection() {
             </div>
           </div>
         </Reveal>
-        <Reveal className="relative" delay={0.1}>
+        <Reveal className="relative mt-8 lg:mt-0" delay={0.1}>
           <div className="absolute left-0 top-5 hidden rounded-2xl bg-white/90 p-4 text-xs font-bold text-[#627291] shadow-xl sm:block">
             <p className="mb-2 text-[10px] text-primary">Seu negócio:</p>
             {heroChecklist.map((item) => (
@@ -139,6 +139,7 @@ function HeroSection() {
             className="mx-auto w-full max-w-[660px]"
             height="520"
             src="/images/hero-growth.svg"
+            unoptimized
             width="680"
           />
         </Reveal>
@@ -240,6 +241,7 @@ function OnlinePresenceSection() {
                 className="mb-5 aspect-[1.18] w-full rounded-lg object-contain"
                 height="220"
                 src={card.image}
+                unoptimized
                 width="260"
               />
               <div className="mb-3 flex items-center gap-2">
@@ -433,6 +435,7 @@ function PersonalizedSection() {
             className="mx-auto w-full max-w-[620px]"
             height="420"
             src="/images/custom-strategy.svg"
+            unoptimized
             width="620"
           />
         </Reveal>
