@@ -1,0 +1,49 @@
+<svg width="680" height="520" viewBox="0 0 680 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Pessoas construindo presenca digital</title>
+  <desc id="desc">Ilustracao de uma equipe organizando blocos com icones de canais digitais.</desc>
+  <rect x="128" y="422" width="92" height="10" rx="5" fill="#DCE5EA"/>
+  <rect x="100" y="385" width="64" height="92" rx="8" fill="#AAB9FF"/>
+  <rect x="250" y="150" width="96" height="96" rx="4" transform="rotate(-22 250 150)" fill="#FFE8EA"/>
+  <rect x="270" y="178" width="44" height="44" rx="10" transform="rotate(-22 270 178)" fill="#F8C84E"/>
+  <path d="M302 185c8 8 10 21 2 31-11-1-21-8-24-18-3-11 11-22 22-13Z" fill="#3BB54A"/>
+  <path d="M304 184c3 7 2 15-2 22-5-4-10-12-8-19 2-5 6-5 10-3Z" fill="#316DFF"/>
+  <rect x="300" y="292" width="72" height="72" fill="#F9CB44"/>
+  <rect x="300" y="364" width="72" height="72" fill="#F9CB44"/>
+  <rect x="372" y="220" width="72" height="72" fill="#94A5FF"/>
+  <rect x="372" y="292" width="72" height="72" fill="#94A5FF"/>
+  <rect x="372" y="364" width="72" height="72" fill="#2D39B2"/>
+  <rect x="444" y="364" width="72" height="72" fill="#CBD3FF"/>
+  <circle cx="408" cy="256" r="24" fill="#63D66E"/>
+  <path d="M397 268l3-11a17 17 0 1 1 7 7l-10 4Z" fill="white"/>
+  <circle cx="408" cy="328" r="24" fill="#236DDA"/>
+  <path d="M414 316h-8a10 10 0 0 0-10 10v6h8v20h10v-20h8l2-8h-10v-4c0-2 1-4 4-4Z" fill="#F8C84E"/>
+  <circle cx="408" cy="400" r="24" fill="#EF5BA6"/>
+  <rect x="393" y="385" width="30" height="30" rx="8" stroke="white" stroke-width="5"/>
+  <circle cx="408" cy="400" r="7" fill="white"/>
+  <circle cx="418" cy="390" r="3" fill="white"/>
+  <path d="M154 402c36-42 44-88 32-139" stroke="#273088" stroke-width="16" stroke-linecap="round"/>
+  <path d="M168 474l26-2" stroke="#EF5B71" stroke-width="10" stroke-linecap="round"/>
+  <path d="M118 466l27 9" stroke="#EF5B71" stroke-width="10" stroke-linecap="round"/>
+  <path d="M149 260c22 29 41 35 72 22" stroke="#F6C43E" stroke-width="38" stroke-linecap="round"/>
+  <path d="M218 282l45-50" stroke="#29318A" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="147" cy="216" r="20" fill="#EF5B71"/>
+  <path d="M132 224c15 2 28-3 39-14-2-21-31-25-41-7-6 11-4 18 2 21Z" fill="#26308A"/>
+  <path d="M495 264c-23 28-40 60-47 99" stroke="#65CBD6" stroke-width="40" stroke-linecap="round"/>
+  <path d="M444 474l-28-2" stroke="#EF5B71" stroke-width="10" stroke-linecap="round"/>
+  <path d="M501 470l-24 8" stroke="#EF5B71" stroke-width="10" stroke-linecap="round"/>
+  <path d="M484 258c-19 28-26 55-18 82" stroke="#65CBD6" stroke-width="34" stroke-linecap="round"/>
+  <path d="M456 338c-20-6-36-17-48-34" stroke="#26308A" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="498" cy="218" r="20" fill="#EF5B71"/>
+  <path d="M488 207c9 10 22 14 37 11 4-24-26-36-39-19-2 3-2 6 2 8Z" fill="#26308A"/>
+  <path d="M530 92c0 36-23 57-57 55" stroke="#F9CB44" stroke-width="12" stroke-linecap="round" stroke-dasharray="1 24"/>
+  <circle cx="532" cy="82" r="34" fill="white" stroke="#9CAFFF" stroke-width="6"/>
+  <path d="M532 64l6 12 13 2-10 9 3 13-12-7-12 7 3-13-10-9 13-2 6-12Z" fill="#F9CB44"/>
+  <circle cx="602" cy="116" r="31" stroke="#DCE5EA" stroke-width="5"/>
+  <path d="M180 90h56c12 0 18 14 10 23H160c2-13 10-23 20-23Z" fill="#E5EDF2"/>
+  <path d="M78 178h58v48H78z" fill="white"/>
+  <path d="M86 192l14 14 29-29" stroke="#7A93FF" stroke-width="6"/>
+  <path d="M86 220l14 14 29-29" stroke="#7A93FF" stroke-width="6"/>
+  <circle cx="36" cy="300" r="4" fill="#D8E4EC"/>
+  <circle cx="104" cy="138" r="4" fill="#D8E4EC"/>
+  <circle cx="545" cy="175" r="4" fill="#D8E4EC"/>
+</svg>

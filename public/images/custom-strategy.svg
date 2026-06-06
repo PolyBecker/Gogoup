@@ -1,0 +1,35 @@
+<svg width="620" height="420" viewBox="0 0 620 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Plano personalizado</title>
+  <desc id="desc">Duas pessoas encaixando uma peca em blocos coloridos.</desc>
+  <rect x="150" y="268" width="82" height="82" fill="#F8CB42"/>
+  <rect x="232" y="268" width="82" height="82" fill="#F8CB42"/>
+  <rect x="150" y="186" width="82" height="82" fill="#F8CB42"/>
+  <rect x="232" y="186" width="82" height="82" fill="#91A1F7"/>
+  <rect x="314" y="186" width="82" height="82" fill="#91A1F7"/>
+  <rect x="232" y="104" width="82" height="82" fill="#91A1F7"/>
+  <rect x="314" y="104" width="82" height="82" fill="#2D39B2"/>
+  <path d="M94 306c21-75 15-131-18-169 26 2 45 15 58 40 7-32 27-54 60-65-22 69-16 134 19 194H94Z" fill="#DCE6ED"/>
+  <path d="M340 102c-9 43-28 74-57 93" stroke="#EF5C72" stroke-width="34" stroke-linecap="round"/>
+  <path d="M284 195c-33-5-58-18-74-39" stroke="#67CDD8" stroke-width="34" stroke-linecap="round"/>
+  <path d="M210 156c12-33 26-57 42-72" stroke="#67CDD8" stroke-width="35" stroke-linecap="round"/>
+  <path d="M254 80c23 18 46 25 69 20" stroke="#EF5C72" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="326" cy="59" r="21" fill="#EF5C72"/>
+  <path d="M310 56c18 7 33 5 47-7-5-22-36-29-48-8-3 5-2 10 1 15Z" fill="#243088"/>
+  <path d="M410 163c34 23 53 55 58 97" stroke="#243088" stroke-width="33" stroke-linecap="round"/>
+  <path d="M468 260c-22 22-42 47-60 75" stroke="#67CDD8" stroke-width="35" stroke-linecap="round"/>
+  <path d="M413 335l-34 8" stroke="#EF5C72" stroke-width="11" stroke-linecap="round"/>
+  <path d="M500 338l-29 12" stroke="#EF5C72" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="398" cy="141" r="21" fill="#EF5C72"/>
+  <path d="M384 135c13 10 29 13 47 7 2-22-26-33-43-19-6 5-7 9-4 12Z" fill="#243088"/>
+  <path d="M352 132l78-42 44 84-78 42-44-84Z" fill="#F0526E"/>
+  <path d="M379 114l26 31 42-54" stroke="#FFCF47" stroke-width="9" stroke-linecap="round"/>
+  <path d="M118 54l54 36-41 16-13-52Z" fill="#91A1F7"/>
+  <path d="M137 84l24 52" stroke="#C8D5E0" stroke-width="3" stroke-dasharray="8 10"/>
+  <path d="M470 82l52 8-8 40-52-8 8-40Z" fill="#67CDD8"/>
+  <circle cx="488" cy="101" r="3" fill="white"/>
+  <circle cx="506" cy="104" r="3" fill="white"/>
+  <circle cx="160" cy="54" r="6" fill="#F8CB42"/>
+  <circle cx="520" cy="160" r="7" fill="#F8CB42"/>
+  <path d="M74 110l12 24 26 4-19 19 5 26-24-12-23 12 4-26-19-19 26-4 12-24Z" fill="#DCE6ED"/>
+  <line x1="64" y1="355" x2="536" y2="355" stroke="#8C99A3" stroke-width="2"/>
+</svg>
