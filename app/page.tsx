@@ -106,7 +106,7 @@ function HeroSection() {
               Assessoria
             </p>
             <h1 className="text-balance text-4xl font-black leading-[0.98] tracking-tight text-primary-dark sm:text-5xl lg:text-6xl">
-              <span className="text-primary">Assessoria</span> estrategica para o seu negócio{" "}
+              <span className="text-primary">Assessoria</span> estratégica para o seu negócio{" "}
               <span className="text-yellow">crescer.</span>
             </h1>
             <p className="mt-7 max-w-md text-base font-bold leading-relaxed text-[#415070]">
