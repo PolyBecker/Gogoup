@@ -2,9 +2,7 @@ import {
   ArrowDownToLine,
   Check,
   Download,
-  Mail,
   MessageCircle,
-  Phone,
 } from "lucide-react";
 import Image from "next/image";
 import {
@@ -24,6 +22,7 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Carousel } from "@/components/ui/Carousel";
 import { Logo } from "@/components/ui/Logo";
 import { Reveal } from "@/components/ui/Reveal";
+import { siteImages } from "@/lib/site-assets";
 
 export default function Home() {
   const structuredData = {
@@ -138,7 +137,8 @@ function HeroSection() {
             alt="Ilustração de pessoas construindo uma estratégia digital com canais como WhatsApp, Google e redes sociais"
             className="mx-auto w-full max-w-[660px]"
             height="520"
-            src="/images/hero-growth.svg"
+            priority
+            src={siteImages.hero}
             unoptimized
             width="680"
           />
@@ -238,11 +238,11 @@ function OnlinePresenceSection() {
               <div className={`mb-4 h-1.5 rounded-full bg-gradient-to-r ${card.accent}`} />
               <Image
                 alt={`Ilustração do serviço ${card.title}`}
-                className="mb-5 aspect-[1.18] w-full rounded-lg object-contain"
-                height="220"
+                className="mb-5 h-52 w-full rounded-lg object-contain sm:h-56"
+                height="601"
                 src={card.image}
                 unoptimized
-                width="260"
+                width="460"
               />
               <div className="mb-3 flex items-center gap-2">
                 <span className="grid size-9 place-items-center rounded-full bg-primary/10 text-primary">
@@ -434,7 +434,7 @@ function PersonalizedSection() {
             alt="Ilustração de atendimento personalizado com pessoas montando blocos"
             className="mx-auto w-full max-w-[620px]"
             height="420"
-            src="/images/custom-strategy.svg"
+            src={siteImages.personalized}
             unoptimized
             width="620"
           />
@@ -449,7 +449,7 @@ function Footer() {
     <footer className="bg-[#090b0e] py-14 text-white">
       <div className="section-shell grid gap-10 md:grid-cols-[1.1fr_1fr_1.1fr]">
         <div>
-          <Logo className="text-xl" />
+          <Logo className="w-36" variant="footer" />
           <p className="mt-7 max-w-xs text-sm font-extrabold leading-relaxed">
             Assessoria para ajudar negócios a crescer de forma consciente.
           </p>
@@ -457,11 +457,27 @@ function Footer() {
         <address className="not-italic">
           <p className="mb-5 text-sm font-black">Contato:</p>
           <a className="mb-3 flex items-center gap-3 text-sm font-semibold text-white/85" href={whatsappUrl} rel="noopener noreferrer" target="_blank">
-            <Phone aria-hidden className="size-6 text-[#61d968]" />
+            <Image
+              alt=""
+              aria-hidden
+              className="size-6"
+              height="24"
+              src={siteImages.whatsappIcon}
+              unoptimized
+              width="24"
+            />
             {brandValues.phone}
           </a>
           <a className="flex items-center gap-3 text-sm font-semibold text-white/85" href={`mailto:${brandValues.email}`}>
-            <Mail aria-hidden className="size-6 text-white" />
+            <Image
+              alt=""
+              aria-hidden
+              className="size-6"
+              height="24"
+              src={siteImages.emailIcon}
+              unoptimized
+              width="24"
+            />
             {brandValues.email}
           </a>
         </address>
@@ -471,11 +487,11 @@ function Footer() {
             UX/UI Designer com 20+ anos de experiência presença digital e web.
           </p>
           <div className="mt-5 flex gap-3">
-            <a aria-label="LinkedIn" className="grid size-8 place-items-center rounded bg-white text-sm font-black text-black" href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank">
-              in
+            <a aria-label="LinkedIn" className="grid size-8 place-items-center" href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank">
+              <Image alt="" aria-hidden height="28" src={siteImages.linkedinIcon} unoptimized width="28" />
             </a>
-            <a aria-label="Portfólio" className="grid size-8 place-items-center rounded bg-white text-sm font-black text-black" href="https://www.behance.net/" rel="noopener noreferrer" target="_blank">
-              ▰
+            <a aria-label="Portfólio" className="grid size-8 place-items-center" href="https://www.behance.net/" rel="noopener noreferrer" target="_blank">
+              <Image alt="" aria-hidden height="28" src={siteImages.portfolioIcon} unoptimized width="28" />
             </a>
           </div>
         </div>
