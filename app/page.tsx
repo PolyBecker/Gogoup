@@ -24,6 +24,7 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Carousel } from "@/components/ui/Carousel";
 import { Logo } from "@/components/ui/Logo";
 import { Reveal } from "@/components/ui/Reveal";
+import { siteImages } from "@/lib/site-assets";
 
 export default function Home() {
   const structuredData = {
@@ -138,7 +139,8 @@ function HeroSection() {
             alt="Ilustração de pessoas construindo uma estratégia digital com canais como WhatsApp, Google e redes sociais"
             className="mx-auto w-full max-w-[660px]"
             height="520"
-            src="/images/hero-growth.svg"
+            priority
+            src={siteImages.hero}
             unoptimized
             width="680"
           />
@@ -434,7 +436,7 @@ function PersonalizedSection() {
             alt="Ilustração de atendimento personalizado com pessoas montando blocos"
             className="mx-auto w-full max-w-[620px]"
             height="420"
-            src="/images/custom-strategy.svg"
+            src={siteImages.personalized}
             unoptimized
             width="620"
           />

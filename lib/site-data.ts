@@ -15,6 +15,7 @@ import {
   Share2,
   ShoppingBag,
 } from "lucide-react";
+import { siteImages } from "@/lib/site-assets";
 
 export const whatsappUrl =
   "https://wa.me/5547996748666?text=Ol%C3%A1%2C%20quero%20conhecer%20a%20assessoria%20da%20Gogoup.";
@@ -44,7 +45,7 @@ export const onlinePresenceCards: {
     title: "Google Business Profile",
     eyebrow: "Google Meu Negócio",
     icon: MapPinned,
-    image: "/images/google-business.svg",
+    image: siteImages.onlinePresence.googleBusiness,
     accent: "from-[#4f75ff] to-[#8fd3ff]",
     text: "Ajustes estratégicos para seu negócio aparecer melhor nas buscas locais.",
     bullets: [
@@ -61,7 +62,7 @@ export const onlinePresenceCards: {
     title: "WhatsApp",
     eyebrow: "Atendimento e vendas",
     icon: MessageCircle,
-    image: "/images/whatsapp-service.svg",
+    image: siteImages.onlinePresence.whatsapp,
     accent: "from-[#16b879] to-[#9ee7c0]",
     text: "Transforme o WhatsApp em um canal de atendimento claro, rápido e vendável.",
     bullets: [
@@ -78,7 +79,7 @@ export const onlinePresenceCards: {
     title: "Redes Sociais",
     eyebrow: "Instagram, Facebook e outros",
     icon: Share2,
-    image: "/images/social-service.svg",
+    image: siteImages.onlinePresence.social,
     accent: "from-[#de6bab] to-[#7380ff]",
     text: "Organização visual e estratégica para fortalecer confiança e relacionamento.",
     bullets: [
@@ -95,7 +96,7 @@ export const onlinePresenceCards: {
     title: "Site Profissional",
     eyebrow: "Credibilidade e conversão",
     icon: Globe2,
-    image: "/images/site-service.svg",
+    image: siteImages.onlinePresence.professionalSite,
     accent: "from-[#72b9e2] to-[#b7dfff]",
     text: "Um site leve, claro e preparado para receber clientes em qualquer dispositivo.",
     bullets: [
@@ -112,7 +113,7 @@ export const onlinePresenceCards: {
     title: "Campanhas de Anúncios",
     eyebrow: "Tráfego pago",
     icon: Megaphone,
-    image: "/images/ads-service.svg",
+    image: siteImages.onlinePresence.ads,
     accent: "from-[#ef7a91] to-[#ffc2cf]",
     text: "Campanhas simples e objetivas para gerar alcance, visitas, leads e vendas.",
     bullets: [
@@ -127,7 +128,7 @@ export const onlinePresenceCards: {
     title: "Monitoramento",
     eyebrow: "Acompanhamento",
     icon: MonitorCog,
-    image: "/images/monitoring-service.svg",
+    image: siteImages.onlinePresence.monitoring,
     accent: "from-[#ff8d3d] to-[#ffbdd3]",
     text: "Acompanhamento profissional contínuo para entender resultados e melhorar decisões.",
     bullets: [
@@ -143,7 +144,7 @@ export const onlinePresenceCards: {
     title: "SEO Local",
     eyebrow: "Busca orgânica",
     icon: Search,
-    image: "/images/seo-service.svg",
+    image: siteImages.onlinePresence.seo,
     accent: "from-[#50d1db] to-[#afebef]",
     text: "Otimização para motores de busca com foco em presença regional.",
     bullets: [
