@@ -77,11 +77,11 @@ function HeroSection() {
       <div className="section-shell grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <Reveal>
           <div className="max-w-xl">
-            <h1 className="text-balance text-4xl font-black leading-[0.98] tracking-tight text-primary-dark sm:text-5xl lg:text-6xl">
+            <h1 className="text-balance text-2xl font-black leading-[1.08] tracking-tight text-primary-dark sm:text-3xl lg:text-4xl">
               <span className="text-primary">Assessoria</span> estratégica para o seu negócio{" "}
               <span className="text-yellow">crescer.</span>
             </h1>
-            <p className="mt-7 max-w-md text-base font-bold leading-relaxed text-[#415070]">
+            <p className="mt-7 max-w-xl text-xl font-bold leading-relaxed text-[#415070] sm:text-2xl">
               Seu negócio conquista mais clientes e cresce de forma consciente.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -262,7 +262,18 @@ function StatsSection() {
             <p className="mx-auto mt-3 max-w-56 text-sm font-extrabold leading-tight text-white">
               {stat.text}
             </p>
-            <p className="mt-4 text-[10px] font-semibold text-white/55">{stat.source}</p>
+            {stat.sourceHref ? (
+              <a
+                className="mt-4 inline-flex text-[10px] font-semibold text-white/70 underline-offset-4 transition hover:text-white hover:underline focus-visible:text-white"
+                href={stat.sourceHref}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {stat.source}
+              </a>
+            ) : (
+              <p className="mt-4 text-[10px] font-semibold text-white/55">{stat.source}</p>
+            )}
           </Reveal>
         ))}
       </div>

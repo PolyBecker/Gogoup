@@ -6,7 +6,7 @@ type ButtonVariant = "yellow" | "blue" | "green" | "orange" | "primary";
 const variants: Record<ButtonVariant, string> = {
   yellow: "bg-yellow text-[#2d2f52] shadow-[0_3px_0_#20254f]",
   blue: "bg-[#a9bbff] text-[#1d255d] shadow-[0_3px_0_#20254f]",
-  green: "bg-green text-white",
+  green: "bg-green !text-white",
   orange: "bg-[#f36a43] text-white",
   primary: "bg-[#0068c9] text-white",
 };

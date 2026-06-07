@@ -162,11 +162,14 @@ export const statistics = [
     value: "76%",
     text: "dos consumidores pesquisam online antes de visitar uma loja",
     source: "Estudo: Think with Google",
+    sourceHref:
+      "https://www.prnewswire.com/news-releases/76-of-consumers-look-at-online-presence-before-physically-visiting-a-business-301272462.html",
   },
   {
-    value: "2x",
-    text: "\"Negócios com presença online têm até 2x mais chances de crescimento\"",
-    source: "Fontes: Sebrae e Google",
+    value: "46%",
+    text: "\"46% das buscas no Google têm intenção local\"",
+    source: "Fonte: Forbes Advisor",
+    sourceHref: "https://www.forbes.com/advisor/business/software/seo-statistics/",
   },
   {
     value: "88%",
