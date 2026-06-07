@@ -193,7 +193,7 @@ export const pillars = [
     headline: "Seja amado e indicado pelos seus clientes.",
     icon: HeartHandshake,
     color: "bg-[#cc6aa2]",
-    text: "Criamos processos, organizamos informações e estruturamos a gestão para que o negócio funcione com mais eficiência, menos sobrecarga e maior controle das operações.",
+    text: "Implementamos boas práticas de atendimento, comunicação e relacionamento para fortalecer a experiência dos clientes, valorizar a equipe e construir uma reputação positiva para a empresa.",
   },
   {
     number: "04",
@@ -201,7 +201,7 @@ export const pillars = [
     headline: "Só quem sabe onde está pode planejar o futuro.",
     icon: BarChart3,
     color: "bg-[#4388bd]",
-    text: "Criamos processos, organizamos informações e estruturamos a gestão para que o negócio funcione com mais eficiência, menos sobrecarga e maior controle das operações.",
+    text: "Analisamos o cenário atual da empresa, o mercado, os concorrentes e o público para identificar desafios, oportunidades e caminhos para um crescimento mais consistente.",
   },
 ];
 
@@ -232,7 +232,7 @@ export const salesServices = [
       "Sistema focado em converter cada contato em uma venda concreta, do primeiro clique ao pagamento.",
     ideal: ["Restaurantes", "Confeitarias", "Lojas", "Delivery", "Pequenos e-commerces"],
     includes: [
-      "Fluxo de venda no WhatsApp",
+      "Fluxo de venda no WhatsApp e Marketplaces",
       "Apresentação de produtos (catálogo)",
       "Chatbot para escolha de produtos",
       "Perguntas de qualificação",

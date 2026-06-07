@@ -487,7 +487,7 @@ function Footer() {
         <div>
           <p className="text-sm font-black">Responsável: Pauline Becker Hellinger</p>
           <p className="mt-4 max-w-sm text-sm font-semibold leading-relaxed text-white/80">
-            UX/UI Designer com 20+ anos de experiência presença digital e web.
+            20 anos de experiência em presença digital e web.
           </p>
           <div className="mt-5 flex gap-3">
             <a aria-label="LinkedIn" className="grid size-8 place-items-center" href="https://www.linkedin.com/in/designeruxuipauline/" rel="noopener noreferrer" target="_blank">
