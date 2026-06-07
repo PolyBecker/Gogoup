@@ -159,7 +159,7 @@ function AssessmentSection() {
             </article>
           ))}
         </Carousel>
-        <p className="mt-3 rounded-full border border-primary/40 bg-white/25 px-5 py-5 text-center text-base font-extrabold leading-relaxed text-primary-dark sm:text-lg">
+        <p className="mt-3 rounded-full border border-primary/40 bg-white/25 px-8 py-5 text-center text-base font-extrabold leading-relaxed text-primary-dark sm:px-12 sm:text-lg lg:px-16">
           Se você respondeu não para uma ou mais perguntas, a Gogoup pode ajudar o seu negócio a
           crescer com segurança e tornando-se referência no seu segmento.
         </p>
@@ -188,7 +188,7 @@ function OfferSection() {
             <h3 className="mt-6 text-balance text-2xl font-black text-[#191d31]">
               Tudo que seu negócio precisa para ser destaque online
             </h3>
-            <p className="mt-4 max-w-none text-sm font-semibold leading-relaxed text-[#61708e] lg:whitespace-nowrap">
+            <p className="mt-4 max-w-full text-sm font-semibold leading-relaxed text-[#61708e]">
               Estruturamos a presença digital do seu negócio (WhatsApp, redes sociais, Google...) para aumentar sua visibilidade, transmitir credibilidade e facilitar o contato com novos clientes.
             </p>
           </div>
