@@ -60,7 +60,7 @@ export default function Home() {
 
 function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-[#9fb0ff]/95 shadow-sm backdrop-blur">
+    <header className="sticky top-0 z-50 bg-[#9fb0ff]/95 shadow-sm backdrop-blur" id="top">
       <nav
         aria-label="Navegação principal"
         className="section-shell flex min-h-16 items-center py-3"
@@ -144,12 +144,12 @@ function AssessmentSection() {
           </div>
         </Reveal>
         <Carousel
-          itemClassName="sm:min-w-[42%] lg:min-w-[31.5%]"
+          itemClassName="flex sm:min-w-[42%] lg:min-w-[31.5%]"
           label="Perguntas sobre necessidade de assessoria"
         >
           {assessmentCards.map((card, index) => (
             <article
-              className="flex min-h-40 items-center gap-4 bg-[#5367bc] p-8 text-white shadow-lg even:bg-[#4c5fb1]"
+              className="flex min-h-48 w-full items-center gap-4 bg-[#5367bc] p-8 text-white shadow-lg even:bg-[#4c5fb1]"
               key={card}
             >
               <span className="text-7xl font-black leading-none text-white/18">
@@ -188,10 +188,8 @@ function OfferSection() {
             <h3 className="mt-6 text-balance text-2xl font-black text-[#191d31]">
               Tudo que seu negócio precisa para ser destaque online
             </h3>
-            <p className="mt-4 max-w-3xl text-sm font-semibold leading-relaxed text-[#61708e]">
-              Estruturamos a presença digital do seu negócio (WhatsApp, redes sociais, Google...)
-              para aumentar sua visibilidade, transmitir credibilidade e facilitar o contato com
-              novos clientes.
+            <p className="mt-4 max-w-none text-sm font-semibold leading-relaxed text-[#61708e] lg:whitespace-nowrap">
+              Estruturamos a presença digital do seu negócio (WhatsApp, redes sociais, Google...) para aumentar sua visibilidade, transmitir credibilidade e facilitar o contato com novos clientes.
             </p>
           </div>
         </div>
@@ -203,7 +201,7 @@ function OfferSection() {
 function OnlinePresenceSection() {
   return (
     <section aria-labelledby="presenca-online" className="bg-[#e7ecf6] pb-16 pt-4">
-      <div className="section-shell">
+      <div className="section-shell bg-[#e7ecf6]">
         <h2 className="sr-only" id="presenca-online">
           PRESENÇA ONLINE
         </h2>
@@ -264,9 +262,16 @@ function StatsSection() {
             </p>
             {stat.sourceHref ? (
               <a
-                className="mt-4 inline-flex text-[10px] font-semibold text-white/70 underline-offset-4 transition hover:text-white hover:underline focus-visible:text-white"
+                className="mt-4 inline-flex border-b-2 text-sm font-bold underline decoration-2 underline-offset-4 transition hover:text-white focus-visible:text-white"
                 href={stat.sourceHref}
                 rel="noopener noreferrer"
+                style={{
+                  borderBottom: "3px solid #00b7ff",
+                  color: "#00b7ff",
+                  textDecorationColor: "#00b7ff",
+                  textDecorationLine: "underline",
+                  textDecorationThickness: "3px",
+                }}
                 target="_blank"
               >
                 {stat.source}
@@ -283,9 +288,14 @@ function StatsSection() {
 
 function PillarsSection() {
   return (
-    <section className="bg-panel py-16">
+    <section className="bg-panel py-16" id="pilares">
       <div className="section-shell">
-        <Carousel itemClassName="sm:min-w-[48%] lg:min-w-[31%]" label="Pilares da assessoria">
+        <Carousel
+          controlsClassName="md:!hidden"
+          controlsLayout="below"
+          itemClassName="min-w-full sm:min-w-[48%] lg:min-w-[31%]"
+          label="Pilares da assessoria"
+        >
           {pillars.map((pillar) => (
             <article className="relative h-full pt-10" key={pillar.title}>
               <div className={`absolute left-0 top-0 grid size-20 place-items-center rounded-2xl ${pillar.color} text-xl font-black text-white shadow-lg`}>
@@ -302,18 +312,13 @@ function PillarsSection() {
                 <p className="mt-6 text-sm font-semibold leading-relaxed text-[#66728d]">
                   {pillar.text}
                 </p>
-                <ButtonLink className="mt-7 px-7" href="#servicos" variant="green">
+                <ButtonLink className="mt-7 px-7 !text-white" href="#servicos" variant="green">
                   Saiba mais.
                 </ButtonLink>
               </div>
             </article>
           ))}
         </Carousel>
-        <div aria-hidden className="mt-3 flex justify-center gap-3">
-          <span className="size-3 rounded-full bg-[#79aeb8]" />
-          <span className="size-3 rounded-full bg-[#cc6aa2]" />
-          <span className="size-3 rounded-full bg-[#4388bd]" />
-        </div>
       </div>
     </section>
   );
@@ -381,7 +386,7 @@ function SalesServicesSection() {
                 <strong>Objetivo:</strong> {service.objective}
               </p>
               <ButtonLink
-                className="mx-auto mt-8 w-44"
+                className="mx-auto mt-8 w-44 !text-white"
                 href={whatsappUrl}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -445,7 +450,9 @@ function Footer() {
     <footer className="bg-[#090b0e] py-14 text-white">
       <div className="section-shell grid gap-10 md:grid-cols-[1.1fr_1fr_1.1fr]">
         <div>
-          <Logo className="w-36" variant="footer" />
+          <a aria-label="Voltar ao início" href="#top">
+            <Logo className="w-36" variant="footer" />
+          </a>
           <p className="mt-7 max-w-xs text-sm font-extrabold leading-relaxed">
             Assessoria para ajudar negócios a crescer de forma consciente.
           </p>
@@ -483,10 +490,10 @@ function Footer() {
             UX/UI Designer com 20+ anos de experiência presença digital e web.
           </p>
           <div className="mt-5 flex gap-3">
-            <a aria-label="LinkedIn" className="grid size-8 place-items-center" href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank">
+            <a aria-label="LinkedIn" className="grid size-8 place-items-center" href="https://www.linkedin.com/in/designeruxuipauline/" rel="noopener noreferrer" target="_blank">
               <Image alt="" aria-hidden height="28" src={siteImages.linkedinIcon} unoptimized width="28" />
             </a>
-            <a aria-label="Portfólio" className="grid size-8 place-items-center" href="https://www.behance.net/" rel="noopener noreferrer" target="_blank">
+            <a aria-label="Portfólio" className="grid size-8 place-items-center" href="https://paulinebeckerhellinger.myportfolio.com/resume-presentation" rel="noopener noreferrer" target="_blank">
               <Image alt="" aria-hidden height="28" src={siteImages.portfolioIcon} unoptimized width="28" />
             </a>
           </div>

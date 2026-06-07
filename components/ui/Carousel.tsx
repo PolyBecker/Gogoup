@@ -9,13 +9,16 @@ export function Carousel({
   label,
   itemClassName,
   controlsClassName,
+  controlsLayout = "overlay",
 }: {
   children: ReactNode[];
   label: string;
   itemClassName?: string;
   controlsClassName?: string;
+  controlsLayout?: "overlay" | "below";
 }) {
   const ref = useRef<HTMLDivElement>(null);
+  const controlsBelow = controlsLayout === "below";
 
   function scroll(direction: "prev" | "next") {
     const node = ref.current;
@@ -46,13 +49,20 @@ export function Carousel({
       </div>
       <div
         className={clsx(
-          "pointer-events-none absolute inset-y-0 left-0 right-0 hidden items-center justify-between md:flex",
-          controlsClassName,
+          controlsBelow
+            ? "mt-4 flex items-center justify-center gap-4"
+            : "pointer-events-none absolute inset-y-0 left-0 right-0 items-center justify-between",
+          controlsClassName ?? "hidden md:flex",
         )}
       >
         <button
           aria-label={`Voltar ${label}`}
-          className="pointer-events-auto -ml-5 grid size-12 place-items-center rounded-full border border-white/80 bg-white/70 text-primary shadow-lg backdrop-blur transition hover:bg-white"
+          className={clsx(
+            "pointer-events-auto grid place-items-center rounded-full border shadow-xl backdrop-blur transition",
+            controlsBelow
+              ? "size-12 border-primary bg-primary text-white hover:bg-primary-dark"
+              : "ml-2 size-14 border-primary bg-primary text-white hover:bg-primary-dark md:-ml-5 md:size-12 md:border-white/80 md:bg-white/70 md:text-primary md:hover:bg-white",
+          )}
           onClick={() => scroll("prev")}
           type="button"
         >
@@ -60,7 +70,12 @@ export function Carousel({
         </button>
         <button
           aria-label={`Avançar ${label}`}
-          className="pointer-events-auto -mr-5 grid size-12 place-items-center rounded-full border border-white/80 bg-white/70 text-primary shadow-lg backdrop-blur transition hover:bg-white"
+          className={clsx(
+            "pointer-events-auto grid place-items-center rounded-full border shadow-xl backdrop-blur transition",
+            controlsBelow
+              ? "size-12 border-primary bg-primary text-white hover:bg-primary-dark"
+              : "mr-2 size-14 border-primary bg-primary text-white hover:bg-primary-dark md:-mr-5 md:size-12 md:border-white/80 md:bg-white/70 md:text-primary md:hover:bg-white",
+          )}
           onClick={() => scroll("next")}
           type="button"
         >
