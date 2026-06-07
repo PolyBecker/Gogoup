@@ -20,7 +20,7 @@ import { siteImages } from "@/lib/site-assets";
 export const whatsappUrl =
   "https://wa.me/5547996748666?text=Ol%C3%A1%2C%20quero%20conhecer%20a%20assessoria%20da%20Gogoup.";
 
-export const documentUrl = "/gogoup_servicos.pdf";
+export const documentUrl = "/Gogoup_servi%C3%A7os.pdf";
 
 export type IconComponent = ComponentType<{ className?: string; "aria-hidden"?: boolean }>;
 
